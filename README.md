@@ -1,10 +1,10 @@
 # First time rice
 
-## OS : CachyOs
+### OS : CachyOs
 
-## KERNEL : Linux 6.18.6-2-cachyos
+### KERNEL : Linux 6.18.6-2-cachyos
 
-## SHELL : zsh 5.9
+### SHELL : zsh 5.9
 
 ### Issues :
 
