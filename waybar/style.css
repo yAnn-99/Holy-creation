@@ -1,4 +1,4 @@
-@import "mocha.css";
+@import "frappe.css";
 
 * {
   font-family: FantasqueSansMono Nerd Font;
@@ -43,23 +43,23 @@
 #pulseaudio,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
+  background-color: @pink;
   padding: 0.5rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
-  color: @blue;
+  color: black;
   border-radius: 0px 1rem 1rem 0px;
   margin-right: 1rem;
 }
 
 #battery {
-  color: @green;
+  color: black;
 }
 
 #battery.charging {
-  color: @green;
+  color: black;
 }
 
 #battery.warning:not(.charging) {
@@ -75,18 +75,34 @@
 }
 
 #pulseaudio {
-  color: @maroon;
+  color: black;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;
 }
 
 #custom-music {
-  color: @mauve;
+  color: black;
   border-radius: 1rem;
 }
 
+#custom_skip_forward {
+  border-radius: 1rem;
+}
+
+#custom_skip_backward {
+  border-radius: 1rem;
+}
 
 #tray {
   margin-right: 1rem;
   border-radius: 1rem;
+}
+
+#bluetooth {
+  margin: 5px;
+  border-radius: 1rem;
+  background-color: @pink;
+  color: black;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

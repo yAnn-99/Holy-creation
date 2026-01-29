@@ -1,14 +1,15 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-        "type": "builtin",
-        "height": 15,
-        "width": 30,
+        "source": "~/.config/fastfetch/miku.png",
+        "type": "kitty",
+        "height": 25,
+        "width": 55,
         "padding": {
-            "top": 5,
+            "top": 1,
             "left": 3
         }
       },
+
   "modules": [
         "break",
         {
@@ -107,7 +108,7 @@
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌────────────────────Uptime / Age / DT────────────────────┐"
+            "format": "\u001b[90m┌─────────────────Uptime / Age / DT─────────────────┐"
         },
         {
             "type": "command",
@@ -127,7 +128,7 @@
         },
         {
             "type": "custom",
-            "format": "\u001b[90m└─────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└───────────────────────────────────────────────────┘"
         }
  
     ]

@@ -3,23 +3,41 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["wlr/workspaces","bluetooth"],
     "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
-    "wlr/workspaces": {
+    "modules-right": ["pulseaudio", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    
+    /*"wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
          "format": " {icon} ",
          "format-icons": {
-             "default": "",
-         },
-     },
+             "default": ""
+         }
+     },*/
+
+    "wlr/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "sort-by-number": true
+    },
+    
     "tray": {
         "icon-size": 21,
         "spacing": 10
     },
+
+    "custom/skip_backward": {
+        "format": "◀◀    {}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "on-click": "playerctl previous"
+    },
+
     "custom/music": {
-        "format": "  {}",
+        "format": " {} ",
         "escape": true,
         "interval": 5,
         "tooltip": false,
@@ -27,12 +45,22 @@
         "on-click": "playerctl play-pause",
         "max-length": 50
     },
+
+    "custom/skip_forward": {
+        "format": "    ▶▶{}",
+        "escape": true,
+        "interval": 5,
+        "tooltip": false,
+        "on-click": "playerctl next"
+    },
+
     "clock": {
         "timezone": "Europe/paris",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
+        "format-alt": "{:%d/%m/%Y}",
         "format": "{:%H:%M}"
     },
+
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon}",
@@ -47,5 +75,17 @@
             "default": ["", "", " "]
         },
         "on-click": "pavucontrol"
+    },
+  
+    "bluetooth": {
+    "format": "󰂯",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format-connected": "{controller_alias} {controller_address}\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
+    "tooltip": true,
+    "tooltip-format": "Bluetooth Settings",
+    "on-click": "blueman-manager"
     }
 }
