@@ -6,5 +6,7 @@
 
 ### SHELL : zsh 5.9
 
+### DE : KDE Plasma
+
 
 
