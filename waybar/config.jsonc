@@ -3,9 +3,9 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     // "width": 1280, // Waybar width
     // Choose the order of the modules
-    "modules-left": ["custom/music"],
-    "modules-center": ["clock"],
-    "modules-right": ["tray","bluetooth","pulseaudio", "battery"],
+    "modules-left": ["clock","network"],
+    "modules-center": ["custom/music"],
+    "modules-right": ["bluetooth","pulseaudio", "battery"],
 
     "tray": {
         "icon-size": 21,
@@ -25,9 +25,18 @@
         "escape": true,
         "interval": 1,
         "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
+        "exec": "playerctl metadata --format='{{ title }} - {{artist}}'",
         "on-click": "playerctl play-pause",
         "max-length": 30
+    },
+
+    "network": {
+    "interface": "wlan0",
+    "format-wifi": "{essid} ",
+    "format-ethernet": "{ifname} ",
+    "format-disconnected": "",
+    "max-length": 70,
+    "on-click": "networkmanager_dmenu"
     },
 
     "custom/skip_forward": {
