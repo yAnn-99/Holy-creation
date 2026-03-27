@@ -31,12 +31,12 @@
     },
 
     "network": {
-    "interface": "wlan0",
-    "format-wifi": "{essid} ",
-    "format-ethernet": "{ifname} ",
-    "format-disconnected": "",
-    "max-length": 70,
-    "on-click": "networkmanager_dmenu"
+        "interface": "wlan0",
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ifname} ",
+        "format-disconnected": "",
+        "max-length": 70,
+        "on-click": "networkmanager_dmenu"
     },
 
     "custom/skip_forward": {
@@ -73,14 +73,16 @@
     },
   
     "bluetooth": {
-    "format": "󰂱",
-    "format-connected": " {device_alias}",
-    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
-    "tooltip-format-connected": "{controller_alias} {controller_address}\n{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
-    "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
-    "tooltip": true,
-    "tooltip-format": "Bluetooth Settings",
-    "on-click": "blueman-manager"
+        "format": "󰂱",
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "tooltip-format-connected": "{controller_alias} {controller_address}\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias} {device_address} {device_battery_percentage}%",
+        "tooltip": true,
+        "tooltip-format": "Bluetooth Settings",
+        "on-click": "blueman-manager"
+        }
     }
-}
+
+    

@@ -8,9 +8,9 @@
 }
 
 #waybar {
-  background: transparent;
+  background-color: transparent;
   margin: 4px;
-  border-color: red;
+  border-color: silver;
 }
 
 
@@ -26,20 +26,20 @@
 #custom-power {
   background-color: black;
   padding: 0.5rem 0.7rem;
-  color: #FF1111;
+  color: silver;
   margin-bottom: 4px;
   margin-top: 4px;
 }
 
 #bluetooth {
-  border: 2px solid #FF1111;
+  border: 2px solid silver;
   border-right:#000000;
   margin-bottom: 4px;
   margin-top: 4px;
 }
 
 #pulseaudio {
-  border: 2px solid #FF1111;
+  border: 2px solid silver;
   border-right:#000000;
   border-left:#000000;
   margin-bottom: 4px;
@@ -48,22 +48,22 @@
 
 #clock {
   background-color:#000000;
-  border: 2px solid #FF1111;
-  color: #FF1111;
+  border: 2px solid silver;
+  color: silver;
   border-radius: 1rem;
   margin: 4px;
 }
 
 #network{
   border-radius: 1rem;
-  border: 2px solid #FF1111;
+  border: 2px solid silver;
   margin : 4px;
   padding-right : 16px;
 }
 
 #battery {
   border-radius: 0px 1rem 1rem 0px;
-  border: 2px solid #FF1111;
+  border: 2px solid silver;
   border-left:#000000;
   margin-bottom: 4px;
   margin-top: 4px;
@@ -77,8 +77,8 @@
 }
 
 #custom-music {
-  color: #FF1111;
-  border: 2px solid #FF1111;
+  color: silver;
+  border: 2px solid silver;
   border-radius: 1rem;
   margin: 5px;
   margin-bottom: 4px;
@@ -98,5 +98,5 @@
   margin-bottom: 4px;
   margin-top: 4px;
   border-radius: 1rem;
-  border: 2px solid #FF1111;
+  border: 2px solid silver;
 }
